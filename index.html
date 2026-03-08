@@ -10,37 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header-top">
-      <div class="container">
-        <span>📞 +56 9 7808 1743</span>
-        <span>✉️ contacto@tlombardia.cl</span>
-      </div>
-    </div>
-    <div class="header-main">
-      <div class="container">
-        <a href="index.html" class="logo">Transportes Lombardía<span>.</span></a>
-        <nav class="main-nav">
-          <a href="index.html" class="active">Inicio</a>
-          <a href="nuestra-empresa.html">Nuestra Empresa</a>
-          <a href="viajes-especiales.html">Viajes Especiales</a>
-          <a href="transfer-aeropuerto.html">Transfer Aeropuerto</a>
-          <a href="turismo.html">Turismo</a>
-          <a href="trabaja-con-nosotros.html">Trabaja con Nosotros</a>
-        </nav>
-        <div class="header-actions">
-          <!--<a href="tel:+56978081743" class="phone-number">
-            <span>📞</span> +56 9 7808 1743
-          </a>-->
-          <a href="https://wa.me/56978081743" class="btn-reserve" target="_blank">
-            Reservar Ahora
-          </a>
-          <button class="mobile-menu-btn" aria-label="Menú">☰</button>
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- Header se carga dinámicamente -->
+  <div id="header-container"></div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -169,7 +140,27 @@
   <!-- Footer se carga dinámicamente -->
   <div id="footer-container"></div>
 
-  <script>
+<script>
+    // Cargar header dinámicamente
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+        
+        // Marcar la página activa
+        const currentPage = 'index';
+        const navLinks = document.querySelectorAll('.main-nav a');
+        navLinks.forEach(link => {
+          if (link.getAttribute('data-page') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+        
+        // Re-attach mobile menu event
+        attachMobileMenu();
+      })
+      .catch(error => console.error('Error al cargar header:', error));
+    
     // Cargar footer dinámicamente
     fetch('footer.html')
       .then(response => response.text())
@@ -181,26 +172,28 @@
     // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
     
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const mainNav = document.querySelector('.main-nav');
-    
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', () => {
-        if (mainNav.style.display === 'flex') {
-          mainNav.style.display = 'none';
-        } else {
-          mainNav.style.display = 'flex';
-          mainNav.style.flexDirection = 'column';
-          mainNav.style.position = 'absolute';
-          mainNav.style.top = '100%';
-          mainNav.style.left = '0';
-          mainNav.style.right = '0';
-          mainNav.style.background = 'white';
-          mainNav.style.padding = '20px';
-          mainNav.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
-        }
-      });
+    // Mobile menu toggle function
+    function attachMobileMenu() {
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const mainNav = document.querySelector('.main-nav');
+      
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+          if (mainNav.style.display === 'flex') {
+            mainNav.style.display = 'none';
+          } else {
+            mainNav.style.display = 'flex';
+            mainNav.style.flexDirection = 'column';
+            mainNav.style.position = 'absolute';
+            mainNav.style.top = '100%';
+            mainNav.style.left = '0';
+            mainNav.style.right = '0';
+            mainNav.style.background = 'white';
+            mainNav.style.padding = '20px';
+            mainNav.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+          }
+        });
+      }
     }
   </script>
 </body>
