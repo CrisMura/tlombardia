@@ -150,44 +150,18 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">TLombardía<span>.</span></a>
-          <p>Empresa de transporte de pasajeros con más de 20 años de experiencia.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Servicios</h4>
-          <a href="transfer-aeropuerto.html">Transfer Aeropuerto</a>
-          <a href="viajes-especiales.html">Viajes Especiales</a>
-          <a href="turismo.html">Turismo</a>
-        </div>
-        <div class="footer-links">
-          <h4>Empresa</h4>
-          <a href="nuestra-empresa.html">Nuestra Empresa</a>
-          <a href="trabaja-con-nosotros.html">Trabaja con Nosotros</a>
-        </div>
-        <div class="footer-contact">
-          <h4>Contacto</h4>
-          <p>📍 Chile</p>
-          <p>📞 +56 9 7808 1743</p>
-          <p>✉️ contacto@tlombardia.cl</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> TLombardía. Todos los derechos reservados.</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/56978081743" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+  <!-- Footer se carga dinámicamente -->
+  <div id="footer-container"></div>
 
   <script>
+    // Cargar footer dinámicamente
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error al cargar footer:', error));
+    
     document.getElementById('year').textContent = new Date().getFullYear();
     
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
