@@ -3,11 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabaja con Nosotros | TLombardía</title>
-  <meta name="description" content="Únete a TLombardía. Estamos buscando profesionales para nuestro equipo de transporte.">
+  <title>Trabaja con Nosotros | Transportes Lombardía</title>
+  <meta name="description" content="Postula a Transportes Lombardía. Buscamos profesionales para sumarse a nuestro equipo de transporte en Chile.">
+  <link rel="canonical" href="https://www.tlombardia.cl/trabaja-con-nosotros.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Transportes Lombardía">
+  <meta property="og:title" content="Trabaja con Nosotros | Transportes Lombardía">
+  <meta property="og:description" content="Postula a nuestro equipo y conoce oportunidades laborales en transporte de pasajeros.">
+  <meta property="og:url" content="https://www.tlombardia.cl/trabaja-con-nosotros.html">
+  <meta property="og:image" content="https://www.tlombardia.cl/img/index1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trabaja con Nosotros | Transportes Lombardía">
+  <meta name="twitter:description" content="Postula a nuestro equipo y conoce oportunidades laborales en transporte de pasajeros.">
+  <meta name="twitter:image" content="https://www.tlombardia.cl/img/index1.jpeg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Postulaciones abiertas - Transportes Lombardía",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Transportes Lombardía",
+      "sameAs": "https://www.tlombardia.cl/"
+    },
+    "employmentType": "FULL_TIME",
+    "jobLocationType": "ON_SITE",
+    "applicantLocationRequirements": {
+      "@type": "Country",
+      "name": "CL"
+    },
+    "url": "https://www.tlombardia.cl/trabaja-con-nosotros.html"
+  }
+  </script>
 </head>
 <body>
   <!-- Header se carga dinámicamente -->
@@ -198,6 +236,23 @@
     
     document.getElementById('year').textContent = new Date().getFullYear();
     
+    function trackClicks() {
+      const trackedLinks = document.querySelectorAll('a[href*="wa.me"], a[href^="mailto:"], .btn-cta-white, .btn-cta-outline, button[type="submit"]');
+      trackedLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'engagement',
+              event_label: link.getAttribute('href') || link.textContent.trim(),
+              page_path: window.location.pathname
+            });
+          }
+        });
+      });
+    }
+
+    setTimeout(trackClicks, 800);
+
     function attachMobileMenu() {
       const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
       const mainNav = document.querySelector('.main-nav');

@@ -3,11 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestra Empresa | TLombardía</title>
-  <meta name="description" content="Conoce más sobre TLombardía, empresa de transporte de pasajeros con más de 20 años de experiencia.">
+  <title>Nuestra Empresa | Transportes Lombardía</title>
+  <meta name="description" content="Conoce a Transportes Lombardía: más de 20 años de experiencia en transporte de pasajeros, servicio 24/7 y compromiso con la calidad.">
+  <link rel="canonical" href="https://www.tlombardia.cl/nuestra-empresa.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Transportes Lombardía">
+  <meta property="og:title" content="Nuestra Empresa | Transportes Lombardía">
+  <meta property="og:description" content="Más de 20 años de experiencia en transporte de pasajeros en Chile.">
+  <meta property="og:url" content="https://www.tlombardia.cl/nuestra-empresa.html">
+  <meta property="og:image" content="https://www.tlombardia.cl/img/index1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nuestra Empresa | Transportes Lombardía">
+  <meta name="twitter:description" content="Más de 20 años de experiencia en transporte de pasajeros en Chile.">
+  <meta name="twitter:image" content="https://www.tlombardia.cl/img/index1.jpeg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Nuestra Empresa - Transportes Lombardía",
+    "url": "https://www.tlombardia.cl/nuestra-empresa.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Transportes Lombardía",
+      "url": "https://www.tlombardia.cl/"
+    }
+  }
+  </script>
 </head>
 <body>
   <!-- Header se carga dinámicamente -->
@@ -130,6 +162,23 @@
     
     document.getElementById('year').textContent = new Date().getFullYear();
     
+    function trackClicks() {
+      const trackedLinks = document.querySelectorAll('a[href*="wa.me"], .btn-cta-white, .btn-cta-outline');
+      trackedLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click_contact', {
+              event_category: 'engagement',
+              event_label: link.getAttribute('href') || 'cta_sin_href',
+              page_path: window.location.pathname
+            });
+          }
+        });
+      });
+    }
+
+    setTimeout(trackClicks, 800);
+
     function attachMobileMenu() {
       const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
       const mainNav = document.querySelector('.main-nav');

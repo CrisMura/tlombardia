@@ -3,11 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transfer Aeropuerto | TLombardía</title>
-  <meta name="description" content="Servicio de transfer aeropuerto con seguimiento de vuelos y puntualidad garantizada. Disponibles 24/7.">
+  <title>Transfer al Aeropuerto en Chile | Transportes Lombardía</title>
+  <meta name="description" content="Servicio de transfer al aeropuerto 24/7 en Chile: traslados puntuales, seguimiento de vuelos y atención para grupos y familias.">
+  <link rel="canonical" href="https://www.tlombardia.cl/transfer-aeropuerto.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Transportes Lombardía">
+  <meta property="og:title" content="Transfer al Aeropuerto en Chile | Transportes Lombardía">
+  <meta property="og:description" content="Traslados al aeropuerto con seguimiento de vuelos y puntualidad garantizada. Servicio disponible 24/7.">
+  <meta property="og:url" content="https://www.tlombardia.cl/transfer-aeropuerto.html">
+  <meta property="og:image" content="https://www.tlombardia.cl/img/aeropuerto1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Transfer al Aeropuerto en Chile | Transportes Lombardía">
+  <meta name="twitter:description" content="Traslados al aeropuerto con seguimiento de vuelos y puntualidad garantizada. Servicio disponible 24/7.">
+  <meta name="twitter:image" content="https://www.tlombardia.cl/img/aeropuerto1.jpeg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Transfer Aeropuerto",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Transportes Lombardía",
+      "url": "https://www.tlombardia.cl/"
+    },
+    "areaServed": "Chile",
+    "url": "https://www.tlombardia.cl/transfer-aeropuerto.html"
+  }
+  </script>
 </head>
 <body>
   <!-- Header se carga dinámicamente -->
@@ -154,6 +187,23 @@
     
     document.getElementById('year').textContent = new Date().getFullYear();
     
+    function trackClicks() {
+      const trackedLinks = document.querySelectorAll('a[href*="wa.me"], .btn-cta-white, .btn-cta-outline');
+      trackedLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click_contact', {
+              event_category: 'engagement',
+              event_label: link.getAttribute('href') || 'cta_sin_href',
+              page_path: window.location.pathname
+            });
+          }
+        });
+      });
+    }
+
+    setTimeout(trackClicks, 800);
+
     function attachMobileMenu() {
       const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
       const mainNav = document.querySelector('.main-nav');

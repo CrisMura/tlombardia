@@ -3,11 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TLombardía | Transfer, Turismo y Viajes Especiales</title>
-  <meta name="description" content="Servicios de transporte de pasajeros: transfer aeropuerto, turismo, viajes especiales y eventos. Atención 24/7.">
+  <title>Transportes Lombardía | Transfer Aeropuerto, Turismo y Viajes Especiales</title>
+  <meta name="description" content="Servicio de transporte de pasajeros en Chile: transfer al aeropuerto, turismo y viajes especiales. Atención 24/7 con experiencia y puntualidad.">
+  <link rel="canonical" href="https://www.tlombardia.cl/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Transportes Lombardía">
+  <meta property="og:title" content="Transportes Lombardía | Transfer Aeropuerto, Turismo y Viajes Especiales">
+  <meta property="og:description" content="Servicio de transporte de pasajeros en Chile: transfer al aeropuerto, turismo y viajes especiales. Atención 24/7.">
+  <meta property="og:url" content="https://www.tlombardia.cl/">
+  <meta property="og:image" content="https://www.tlombardia.cl/img/index1.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Transportes Lombardía | Transfer Aeropuerto, Turismo y Viajes Especiales">
+  <meta name="twitter:description" content="Servicio de transporte de pasajeros en Chile: transfer al aeropuerto, turismo y viajes especiales. Atención 24/7.">
+  <meta name="twitter:image" content="https://www.tlombardia.cl/img/index1.jpeg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Transportes Lombardía",
+    "url": "https://www.tlombardia.cl/",
+    "telephone": "+56 9 7808 1743",
+    "email": "contacto@tlombardia.cl",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CL"
+    },
+    "sameAs": [
+      "https://wa.me/56978081743"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Transportes Lombardía",
+    "url": "https://www.tlombardia.cl/"
+  }
+  </script>
 </head>
 <body>
   <!-- Header se carga dinámicamente -->
@@ -172,6 +219,24 @@
     // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
     
+    // Tracking eventos CTA/WhatsApp
+    function trackClicks() {
+      const trackedLinks = document.querySelectorAll('a[href*="wa.me"], .btn-hero, .btn-cta-white, .btn-cta-outline, .service-link, .quick-link');
+      trackedLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click_contact', {
+              event_category: 'engagement',
+              event_label: link.getAttribute('href') || 'cta_sin_href',
+              page_path: window.location.pathname
+            });
+          }
+        });
+      });
+    }
+
+    setTimeout(trackClicks, 800);
+
     // Mobile menu toggle function
     function attachMobileMenu() {
       const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
