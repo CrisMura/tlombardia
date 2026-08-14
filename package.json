@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "build:pages": "next build",
-    "deploy:pages": "npm run build:pages && npx --yes wrangler pages deploy out --project-name tlombardia",
+    "deploy": "npx --yes wrangler pages deploy out --project-name tlombardia",
+    "deploy:pages": "npm run build:pages && npm run deploy",
     "start": "next start",
     "lint": "next lint"
   },

@@ -21,6 +21,7 @@ Configuracion recomendada en Cloudflare Pages:
 - Build command: `npm run build`
 - Build output directory: `out`
 - Node version: `24`
+- Deploy command: vacio, o `npm run deploy` si el proyecto tiene un deploy command personalizado
 
 Tambien se puede desplegar por Wrangler sin pasar por OpenNext:
 
@@ -29,6 +30,8 @@ npm run deploy:pages
 ```
 
 No usar `npx opennextjs-cloudflare build` para este proyecto: la app esta configurada con `output: "export"` y genera el sitio estatico en `out`. OpenNext espera un bundle `standalone` dentro de `.next`, por eso falla con `ENOENT ... .next/standalone/.next/server/pages-manifest.json`.
+
+Tampoco usar `npx wrangler deploy`: ese comando es para Workers. En Pages, el comando correcto es `npx --yes wrangler pages deploy out --project-name tlombardia`, o el script equivalente `npm run deploy`.
 
 ## Decisiones para el plan gratuito de Cloudflare
 
