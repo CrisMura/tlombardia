@@ -22,6 +22,14 @@ Configuracion recomendada en Cloudflare Pages:
 - Build output directory: `out`
 - Node version: `24`
 
+Tambien se puede desplegar por Wrangler sin pasar por OpenNext:
+
+```bash
+npm run deploy:pages
+```
+
+No usar `npx opennextjs-cloudflare build` para este proyecto: la app esta configurada con `output: "export"` y genera el sitio estatico en `out`. OpenNext espera un bundle `standalone` dentro de `.next`, por eso falla con `ENOENT ... .next/standalone/.next/server/pages-manifest.json`.
+
 ## Decisiones para el plan gratuito de Cloudflare
 
 - `output: "export"` genera HTML/CSS/JS estatico, por lo que no hay Pages Functions ni Workers por visita.

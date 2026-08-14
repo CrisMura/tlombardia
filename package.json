@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pages": "next build",
+    "deploy:pages": "npm run build:pages && npx --yes wrangler pages deploy out --project-name tlombardia",
     "start": "next start",
     "lint": "next lint"
   },
