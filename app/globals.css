@@ -8,8 +8,8 @@
   --brand: #8a5a21;
   --brand-dark: #53351f;
   --brand-light: #dcc9a6;
-  --accent: #0f766e;
-  --accent-soft: #dff3ef;
+  --accent: #996300;
+  --accent-soft: #f1f0e7;
   --shadow: 0 8px 28px rgba(47, 33, 25, 0.1);
 }
 
@@ -146,7 +146,7 @@ textarea {
 
 .btn-reserve:hover,
 .btn-hero-primary:hover {
-  background: #0b5e58;
+  background: #693F26;
   transform: translateY(-2px);
 }
 
@@ -213,7 +213,7 @@ textarea {
 }
 
 .hero-badge {
-  background: rgba(15, 118, 110, 0.92);
+  background: rgba(162, 111, 37, 0.9);
   border-radius: 999px;
   color: #ffffff;
   display: inline-block;
@@ -292,14 +292,21 @@ textarea {
 
 .quick-link-icon {
   align-items: center;
-  background: var(--accent-soft);
-  border-radius: 999px;
   color: var(--accent);
   display: flex;
-  font-size: 0.78rem;
-  font-weight: 850;
-  height: 38px;
+  height: 42px;
   justify-content: center;
+  width: 42px;
+}
+
+.quick-link-svg {
+  display: block;
+  fill: none;
+  height: 38px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
   width: 38px;
 }
 
@@ -564,6 +571,21 @@ textarea {
   margin: 8px 0;
 }
 
+.footer-contact-item {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.footer-contact-icon {
+  color: #ff4b35;
+  flex: 0 0 auto;
+  height: 15px;
+  stroke-width: 2.6;
+  width: 15px;
+}
+
 .footer-links a:hover,
 .footer-contact a:hover {
   color: #ffffff;
@@ -595,6 +617,10 @@ textarea {
 
 .whatsapp-float:hover {
   transform: scale(1.06);
+}
+
+.whatsapp-float img {
+  display: block;
 }
 
 @keyframes fadeInUp {

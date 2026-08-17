@@ -32,6 +32,9 @@ export const imageMap = {
   graduaciones: "graduaciones",
   home: "index1",
   matrimonios: "matri1",
+  mision: "mision",
+  valores: "valores",
+  vision: "vision",
   viajes: "viajes_especiales5"
 } as const;
 
@@ -49,21 +52,21 @@ export const homeServices: ServiceCard[] = [
   {
     title: "Transfer Aeropuerto",
     description:
-      "Servicio de recogida y traslado al aeropuerto con seguimiento de vuelos y puntualidad garantizada. Disponible las 24 horas.",
+      "Servicio de recogida y traslado al Aeropuerto de Santiago desde la V Región costa, con seguimiento de vuelo, confianza y puntualidad garantizada para tu viaje de negocios, vacaciones o relajo. Disponible 24/7 programados.",
     href: "/transfer-aeropuerto/",
     image: "aeropuerto"
   },
   {
     title: "Viajes Especiales",
     description:
-      "Organización de traslados para eventos, matrimonios, conciertos, convenios empresas y grupos corporativos.",
+      "Organización de traslado para eventos tales como matrimonios, novios o invitados, conciertos, teatros, convenios empresas y viajes corporativos.",
     href: "/viajes-especiales/",
     image: "viajes"
   },
   {
     title: "Turismo",
     description:
-      "Rutas turísticas personalizadas, circuitos por Chile, escapadas de fin de semana y viajes para grupos y familias.",
+      "Rutas turísticas personalizadas, circuitos por la V Región, escapadas de fin de semana, viajes grupales, parejas o familias.",
     href: "/turismo/",
     marker: "CL"
   }
@@ -73,17 +76,20 @@ export const companyCards: ServiceCard[] = [
   {
     title: "Misión",
     description:
-      "Brindar servicios de transporte de pasajeros con altos estándares de calidad, seguridad y puntualidad, superando las expectativas de nuestros clientes en cada viaje."
+      "Brindar soluciones de transporte de pasajeros seguras, eficientes y personalizadas, ofreciendo experiencias de viaje de alta calidad mediante un servicio confiable, puntual y profesional, adaptado a las necesidades de cada cliente en sus traslados.",
+    image: "mision"
   },
   {
     title: "Visión",
     description:
-      "Ser una empresa de transporte de pasajeros líder en la región, reconocida por su compromiso, profesionalismo e innovación en el servicio."
+      "Ser una empresa líder en servicios de transporte y turismo en Chile, reconocida por su excelencia operativa, compromiso con los clieentes, innovación en el servicio y capacidad de generar experiencias de viaje cómodas, seguras y memorables.",
+    image: "vision"
   },
   {
     title: "Valores",
     description:
-      "Compromiso, puntualidad, seguridad, profesionalismo y atención personalizada son los pilares que guían nuestra operación diaria."
+      "Compromiso: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia. Seguridad: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones. Calidad de Servicio: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada. Confianza: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos. Profesionalismo: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
+    image: "valores"
   }
 ];
 

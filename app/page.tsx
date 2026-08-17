@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BriefcaseBusiness, Building2, Guitar, MountainSnow, Plane } from "lucide-react";
 import { Cta } from "@/components/Cta";
 import { Hero } from "@/components/Hero";
 import { ServiceGrid } from "@/components/ServiceGrid";
@@ -50,6 +51,23 @@ const jsonLd = [
 
 const quickLinks = navItems.filter((item) => item.key !== "inicio");
 
+function QuickLinkIcon({ name }: { name: string }) {
+  switch (name) {
+    case "nuestra-empresa":
+      return <Building2 className="quick-link-svg" aria-hidden="true" />;
+    case "viajes-especiales":
+      return <Guitar className="quick-link-svg" aria-hidden="true" />;
+    case "transfer-aeropuerto":
+      return <Plane className="quick-link-svg" aria-hidden="true" />;
+    case "turismo":
+      return <MountainSnow className="quick-link-svg" aria-hidden="true" />;
+    case "trabaja-con-nosotros":
+      return <BriefcaseBusiness className="quick-link-svg" aria-hidden="true" />;
+    default:
+      return <Building2 className="quick-link-svg" aria-hidden="true" />;
+  }
+}
+
 export default function HomePage() {
   return (
     <>
@@ -78,7 +96,7 @@ export default function HomePage() {
           {quickLinks.map((item) => (
             <Link href={item.href} className="quick-link" key={item.key}>
               <span className="quick-link-icon" aria-hidden="true">
-                {item.label.slice(0, 2).toUpperCase()}
+                <QuickLinkIcon name={item.key} />
               </span>
               {item.label}
             </Link>

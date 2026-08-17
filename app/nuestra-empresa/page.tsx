@@ -51,8 +51,7 @@ export default function NuestraEmpresaPage() {
           <div className="section-header">
             <h2>¿Quiénes Somos?</h2>
             <p>
-              TLombardía es una empresa dedicada al transporte de pasajeros,
-              ofreciendo servicios de calidad para diferentes necesidades.
+              Transportes Lombardía es una empresa dedicada al transporte de pasajeros, ofreciendo servicios de calidad para las diferentes necesidades de nuestros clientes.
             </p>
           </div>
           <ServiceGrid cards={companyCards} />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems, site } from "@/lib/site";
 
 const serviceLinks = navItems.filter((item) =>
@@ -41,10 +42,22 @@ export function Footer() {
           </div>
           <div className="footer-contact">
             <h2>Contacto</h2>
-            <p>Chile</p>
-            <a href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>
-            <a href={`tel:${site.secondaryPhone.replace(/\s/g, "")}`}>{site.secondaryPhone}</a>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
+            <p className="footer-contact-item">
+              <MapPin className="footer-contact-icon" aria-hidden="true" />
+              <span>Valparaíso, Chile</span>
+            </p>
+            <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="footer-contact-item">
+              <Phone className="footer-contact-icon" aria-hidden="true" />
+              <span> {site.phone}</span>
+            </a>
+            <a href={`tel:${site.secondaryPhone.replace(/\s/g, "")}`} className="footer-contact-item">
+              <Phone className="footer-contact-icon" aria-hidden="true" />
+              <span> {site.secondaryPhone}</span>
+            </a>
+            <a href={`mailto:${site.email}`} className="footer-contact-item">
+              <Mail className="footer-contact-icon" aria-hidden="true" />
+              <span> {site.email}</span>
+            </a>
           </div>
         </div>
         <div className="footer-bottom">
