@@ -52,7 +52,7 @@ export const homeServices: ServiceCard[] = [
   {
     title: "Transfer Aeropuerto",
     description:
-      "Servicio de recogida y traslado al Aeropuerto de Santiago desde la V Región costa, con seguimiento de vuelo, confianza y puntualidad garantizada para tu viaje de negocios, vacaciones o relajo. Disponible 24/7 programados.",
+      "ssssssServicio de recogida y traslado al Aeropuerto de Santiago desde la V Región costa, con seguimiento de vuelo, confianza y puntualidad garantizada para tu viaje de negocios, vacaciones o relajo. Disponible 24/7 programados.",
     href: "/transfer-aeropuerto/",
     image: "aeropuerto"
   },
