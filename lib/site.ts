@@ -38,6 +38,10 @@ export const imageMap = {
   home: "index1",
   matrimonios: "matri1",
   mision: "mision",
+  turismoRutaCosta: "turismo-ruta-costa",
+  turismoRutaPatrimonial: "turismo-ruta-patrimonial",
+  turismoRutaPoetas: "turismo-ruta-poetas",
+  turismoRutaVino: "turismo-ruta-vino",
   valores: "valores",
   vision: "vision",
   viajes: "viajes_especiales5"
@@ -190,24 +194,28 @@ export const tourismCards: ServiceCard[] = [
     title: "Ruta Patrimonial",
     description:
       "La ciudad de Valparaíso, cuyos orígenes se remontan al siglo XVI, es nuestra ciudad puerto, Patrimonio de la Humanidad y sede del Poder Legislativo, acompañado por Viña del Mar, su Reloj de Flores y su anfiteatro, terminando por la Capital Gastronómica que es Con Con.\n**Itinerario**: Muelle Prat, Plaza Sotomayor, Iglesia La Matriz, Paseo 21 de Mayo, Las Torpederas, Playa Ancha, Laguna Verde, La Sebastiana, Camino Cintura, Cerro Bellavista, Centro Valparaiso, Cerro Baron, Caleta Portales.\n**Duración**: 4 horas (incluye 1 hora de colación).\n**Mínimo**: 3 pasajeros.",
+    image: "turismoRutaPatrimonial",
     marker: "RUT"
   },
   {
     title: "Ruta del Vino, Valle de Casablanca",
     description:
       "Iniciamos nuestro recorrido en el Santuario de Lo Vásquez, mostrando la arquitectura de esta imponente iglesia escondida entre los valles. Continuamos por Casablanca en un recorrido por la ciudad y seguimos en ruta hacia los hermosos valles y viñedos. Visitamos Viña Mar e Indómita. Cliente puede elegir otra opción.\n**Itinerario**: Santuario Lo Vásquez, visita a la ciudad de Casablanca, visita a 2 viñedos. Opcional, almuerzo en restaurant de viñedos por cuenta del pasajero.\n**Duración**: 4 horas aproximadamente.\n**Mínimo**: 3 pasajeros.",
+    image: "turismoRutaVino",
     marker: "MAR"
   },
   {
     title: "Ruta de los Poetas, Litoral Central",
     description:
       "Iniciamos nuestro recorrido por Casablanca, ciudad de los Valles, siguiendo por Algarrobo y su encanto. El Quisco e Isla Negra nuestra detención obligada para visitar una de las casas predilectas de nuestro poeta Pablo Neruda (ahora Casa-Museo), lugar donde junto al mar y la tranquilidad de la zona inspiro para escribir muchas de sus obras.\n**Itinerario**: Casablanca, Algarrobo, El Quisco, El Tabo, Isla Negra.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
+    image: "turismoRutaPoetas",
     marker: "VIN"
   },
   {
     title: "Ruta de la Costa",
     description:
       "Iniciamos nuestro recorrido por el borde costero de Valparaíso, Viña del Mar y Con Con. La ruta de la costa, comienza a construirse en 1917, donde llegaremos a Quintero, donde corsarios y piratas dieron vida a interesantes historias. Horcón, quizás el lugar más místico y típico de la zona, con su Puente de los Deseos, donde también encontraremos a sus pescadores y artesanos. Maitencillo y Cachagua, que destacan pos sus casas y playas que atraen surfistas, finalizando en Zapallar, donde sus construcciones al estilo europeo y cuidado jardines aparecen en medio de frondosos bosques que llegan hasta la playa.\n**Itinerario**: Valparaiso, Viña del Mar, Con Con Costa, Quintero, Horcon, Maitencillo, Cachagua, Zapallar.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
+    image: "turismoRutaCosta",
     marker: "ADV"
   },
   {
