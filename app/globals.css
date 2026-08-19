@@ -205,7 +205,7 @@ textarea {
 }
 
 .hero-media-slide {
-  animation: heroSlide 49s infinite;
+  animation: heroSlide 42s infinite;
   opacity: 0;
   transform: scale(1.01);
 }
