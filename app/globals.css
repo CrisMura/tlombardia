@@ -379,6 +379,20 @@ textarea {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.services-grid-list {
+  grid-template-columns: 1fr;
+}
+
+.services-grid-list .service-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+.services-grid-list .service-image {
+  height: 100%;
+  min-height: 150px;
+}
+
 .service-card {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -426,6 +440,7 @@ textarea {
 .service-content p {
   color: var(--muted);
   margin-bottom: 18px;
+  white-space: pre-line;
 }
 
 .service-link {
@@ -784,6 +799,15 @@ textarea {
   .stats-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .services-grid-list .service-card {
+    display: block;
+  }
+
+  .services-grid-list .service-image {
+    height: 170px;
+    min-height: 0;
   }
 
   .section,

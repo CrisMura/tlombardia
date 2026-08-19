@@ -141,7 +141,7 @@ export const specialTripsCards: ServiceCard[] = [
   {
     title: "Fiestas y Celebraciones",
     description:
-      "Traslado seguro para fiestas de fin de año, cumpleaños y celebraciones familiares.",
+      "Traslado seguro para fiestas de fin de año, cumpleaños, actividades familiares, carrete seguro.",
     image: "celebraciones"
   }
 ];
@@ -150,13 +150,13 @@ export const airportCards: ServiceCard[] = [
   {
     title: "Traslado al Aeropuerto",
     description:
-      "Te llevamos desde tu hotel, casa u oficina directamente a la terminal del aeropuerto. Llega sin estrés.",
+      "Te llevamos desde tu hotel, casa u oficina directamente al terminal nacional o internacional del Aeropuerto Arturo Merino Benítez de Santiago. Llega sin estrés.",
     marker: "OUT"
   },
   {
     title: "Recogida en Aeropuerto",
     description:
-      "Te esperamos en llegadas con un cartel a tu nombre. Traslado cómodo hacia tu destino final.",
+      "Te esperamos en los arrivals con un cartel personalizado con tu nombre. También podemos coordinar tu llegada via whatsapp de forma más privada. Traslado hacia tu destino.",
     marker: "IN"
   },
   {
@@ -180,34 +180,34 @@ export const airportCards: ServiceCard[] = [
   {
     title: "Atención 24/7",
     description:
-      "Servicio disponible todos los días del año, incluyendo festivos y horarios nocturnos.",
+      "Servicio disponible todos los días del año, incluyendo festivos y horarios nocturnos (previa programación).",
     marker: "365"
   }
 ];
 
 export const tourismCards: ServiceCard[] = [
   {
-    title: "Circuitos Turísticos",
+    title: "Ruta Patrimonial",
     description:
-      "Rutas prediseñadas por destinos destacados de Chile. Incluye transporte y guía especializado.",
+      "La ciudad de Valparaíso, cuyos orígenes se remontan al siglo XVI, es nuestra ciudad puerto, Patrimonio de la Humanidad y sede del Poder Legislativo, acompañado por Viña del Mar, su Reloj de Flores y su anfiteatro, terminando por la Capital Gastronómica que es Con Con.\n**Itinerario**: Muelle Prat, Plaza Sotomayor, Iglesia La Matriz, Paseo 21 de Mayo, Las Torpederas, Playa Ancha, Laguna Verde, La Sebastiana, Camino Cintura, Cerro Bellavista, Centro Valparaiso, Cerro Baron, Caleta Portales.\n**Duración**: 4 horas (incluye 1 hora de colación).\n**Mínimo**: 3 pasajeros.",
     marker: "RUT"
   },
   {
-    title: "Escapadas a la Costa",
+    title: "Ruta del Vino, Valle de Casablanca",
     description:
-      "Viajes a playas y balnearios. Disfruta del mar con la comodidad de transporte incluido.",
+      "Iniciamos nuestro recorrido en el Santuario de Lo Vásquez, mostrando la arquitectura de esta imponente iglesia escondida entre los valles. Continuamos por Casablanca en un recorrido por la ciudad y seguimos en ruta hacia los hermosos valles y viñedos. Visitamos Viña Mar e Indómita. Cliente puede elegir otra opción.\n**Itinerario**: Santuario Lo Vásquez, visita a la ciudad de Casablanca, visita a 2 viñedos. Opcional, almuerzo en restaurant de viñedos por cuenta del pasajero.\n**Duración**: 4 horas aproximadamente.\n**Mínimo**: 3 pasajeros.",
     marker: "MAR"
   },
   {
-    title: "Rutas Vinícolas",
+    title: "Ruta de los Poetas, Litoral Central",
     description:
-      "Tour por los valles viñateros de Chile. Visita bodegas con traslado exclusivo.",
+      "Iniciamos nuestro recorrido por Casablanca, ciudad de los Valles, siguiendo por Algarrobo y su encanto. El Quisco e Isla Negra nuestra detención obligada para visitar una de las casas predilectas de nuestro poeta Pablo Neruda (ahora Casa-Museo), lugar donde junto al mar y la tranquilidad de la zona inspiro para escribir muchas de sus obras.\n**Itinerario**: Casablanca, Algarrobo, El Quisco, El Tabo, Isla Negra.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
     marker: "VIN"
   },
   {
-    title: "Turismo Aventura",
+    title: "Ruta de la Costa",
     description:
-      "Viajes a destinos de naturaleza y aventura: ski, trekking, kayak y más actividades.",
+      "Iniciamos nuestro recorrido por el borde costero de Valparaíso, Viña del Mar y Con Con. La ruta de la costa, comienza a construirse en 1917, donde llegaremos a Quintero, donde corsarios y piratas dieron vida a interesantes historias. Horcón, quizás el lugar más místico y típico de la zona, con su Puente de los Deseos, donde también encontraremos a sus pescadores y artesanos. Maitencillo y Cachagua, que destacan pos sus casas y playas que atraen surfistas, finalizando en Zapallar, donde sus construcciones al estilo europeo y cuidado jardines aparecen en medio de frondosos bosques que llegan hasta la playa.\n**Itinerario**: Valparaiso, Viña del Mar, Con Con Costa, Quintero, Horcon, Maitencillo, Cachagua, Zapallar.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
     marker: "ADV"
   },
   {

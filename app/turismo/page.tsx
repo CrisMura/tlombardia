@@ -42,7 +42,7 @@ export default function TurismoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Hero
         badge="Turismo"
-        title="Descubre Chile con Nosotros"
+        title="Descubre Valparaíso con Nosotros"
         text="Rutas turísticas personalizadas, circuitos y escapadas. Vive experiencias únicas junto a tu familia o grupo de amigos."
         image="home"
         compact
@@ -53,7 +53,7 @@ export default function TurismoPage() {
             <h2>Servicios Turísticos</h2>
             <p>Te llevamos a los mejores destinos de Chile con comodidad y seguridad.</p>
           </div>
-          <ServiceGrid cards={tourismCards} />
+          <ServiceGrid cards={tourismCards} className="services-grid-list" />
         </div>
       </section>
       <Stats />

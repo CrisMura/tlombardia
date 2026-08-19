@@ -4,11 +4,24 @@ import { PictureImage } from "./PictureImage";
 
 type ServiceGridProps = {
   cards: ServiceCard[];
+  className?: string;
 };
 
-export function ServiceGrid({ cards }: ServiceGridProps) {
+function renderDescription(description: string) {
+  const parts = description.split(/(\*\*[^*]+\*\*)/g);
+
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+
+    return part;
+  });
+}
+
+export function ServiceGrid({ cards, className }: ServiceGridProps) {
   return (
-    <div className="services-grid">
+    <div className={`services-grid${className ? ` ${className}` : ""}`}>
       {cards.map((card) => (
         <article className="service-card" key={card.title}>
           {card.image ? (
@@ -20,7 +33,7 @@ export function ServiceGrid({ cards }: ServiceGridProps) {
           )}
           <div className="service-content">
             <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            <p>{renderDescription(card.description)}</p>
             {card.href ? (
               <Link href={card.href} className="service-link">
                 Más información
