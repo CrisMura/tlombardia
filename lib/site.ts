@@ -30,6 +30,11 @@ export const imageMap = {
   celebraciones: "celebraciones",
   convenio: "convenio_emp",
   graduaciones: "graduaciones",
+  homeCostaMatrimonio: "home-costa-matrimonio",
+  homeValparaisoIglesia: "home-valparaiso-iglesia",
+  homeValparaisoMatrimonio: "home-valparaiso-matrimonio",
+  homeVinaInvitados: "home-vina-invitados",
+  homeVinaPlaya: "home-vina-playa",
   home: "index1",
   matrimonios: "matri1",
   mision: "mision",
@@ -39,6 +44,15 @@ export const imageMap = {
 } as const;
 
 export type ImageKey = keyof typeof imageMap;
+
+export const homeHeroImages = [
+  "home",
+  "homeValparaisoMatrimonio",
+  "homeVinaInvitados",
+  "homeCostaMatrimonio",
+  "homeValparaisoIglesia",
+  "homeVinaPlaya"
+] as const satisfies readonly ImageKey[];
 
 export type ServiceCard = {
   title: string;

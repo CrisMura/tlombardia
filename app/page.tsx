@@ -5,7 +5,7 @@ import { Cta } from "@/components/Cta";
 import { Hero } from "@/components/Hero";
 import { ServiceGrid } from "@/components/ServiceGrid";
 import { Stats } from "@/components/Stats";
-import { homeServices, navItems, site } from "@/lib/site";
+import { homeHeroImages, homeServices, navItems, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -79,7 +79,7 @@ export default function HomePage() {
         badge="Servicios de Transporte Premium"
         title="Tu Mejor Experiencia de Transporte en Chile"
         text="Contamos con más de 20 años de experiencia ofreciendo servicios de transfer, turismo y viajes especiales con calidad, compromiso y puntualidad."
-        image="home"
+        image={homeHeroImages}
       >
         <div className="hero-buttons">
           <a href={site.whatsapp} className="btn-hero btn-hero-primary" target="_blank" rel="noreferrer">
