@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Compass, ShieldCheck, Telescope } from "lucide-react";
 import type { ServiceCard } from "@/lib/site";
 import { PictureImage } from "./PictureImage";
 
@@ -19,12 +20,26 @@ function renderDescription(description: string) {
   });
 }
 
+function renderIcon(icon: ServiceCard["icon"]) {
+  if (icon === "mission") {
+    return <Compass aria-hidden="true" />;
+  }
+
+  if (icon === "vision") {
+    return <Telescope aria-hidden="true" />;
+  }
+
+  return <ShieldCheck aria-hidden="true" />;
+}
+
 export function ServiceGrid({ cards, className }: ServiceGridProps) {
   return (
     <div className={`services-grid${className ? ` ${className}` : ""}`}>
       {cards.map((card) => (
         <article className="service-card" key={card.title}>
-          {card.image ? (
+          {card.icon ? (
+            <div className="service-image service-icon-panel">{renderIcon(card.icon)}</div>
+          ) : card.image ? (
             <PictureImage image={card.image} alt={card.title} className="service-image service-photo" />
           ) : (
             <div className="service-image service-marker" aria-hidden="true">

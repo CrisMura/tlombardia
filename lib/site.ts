@@ -67,6 +67,7 @@ export type ServiceCard = {
   description: string;
   href?: string;
   image?: ImageKey;
+  icon?: "mission" | "vision" | "values";
   marker?: string;
 };
 
@@ -99,19 +100,19 @@ export const companyCards: ServiceCard[] = [
     title: "Misión",
     description:
       "Brindar soluciones de transporte de pasajeros seguras, eficientes y personalizadas, ofreciendo experiencias de viaje de alta calidad mediante un servicio confiable, puntual y profesional, adaptado a las necesidades de cada cliente en sus traslados.",
-    image: "empresaMision"
+    icon: "mission"
   },
   {
     title: "Visión",
     description:
       "Ser una empresa líder en servicios de transporte y turismo en Chile, reconocida por su excelencia operativa, compromiso con los clieentes, innovación en el servicio y capacidad de generar experiencias de viaje cómodas, seguras y memorables.",
-    image: "empresaVision"
+    icon: "vision"
   },
   {
     title: "Valores",
     description:
-      "Compromiso: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia. Seguridad: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones. Calidad de Servicio: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada. Confianza: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos. Profesionalismo: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
-    image: "empresaValores"
+      "**- Compromiso**: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia.\n**- Seguridad**: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones.\n**- Calidad de Servicio**: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada.\n**- Confianza**: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos.\n**- Profesionalismo**: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
+    icon: "values"
   }
 ];
 
