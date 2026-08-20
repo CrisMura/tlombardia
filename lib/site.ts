@@ -111,7 +111,7 @@ export const companyCards: ServiceCard[] = [
   {
     title: "Valores",
     description:
-      "**- Compromiso**: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia.\n**- Seguridad**: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones.\n**- Calidad de Servicio**: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada.\n**- Confianza**: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos.\n**- Profesionalismo**: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
+      "\n**Compromiso**: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia.\n**Seguridad**: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones.\n**Calidad de Servicio**: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada.\n**Confianza**: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos.\n**Profesionalismo**: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
     icon: "values"
   }
 ];
