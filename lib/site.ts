@@ -5,6 +5,7 @@ export const site = {
   phone: "+56 9 7808 1743",
   secondaryPhone: "+56 32 311 6941",
   email: "contacto@tlombardia.cl",
+  jobsEmail: "empleos@tlombardia.cl",
   whatsapp: "https://wa.me/56978081743",
   analyticsId: "G-3PQH38FNTR"
 };
@@ -15,7 +16,7 @@ export const navItems = [
   { label: "Viajes Especiales", href: "/viajes-especiales/", key: "viajes-especiales" },
   { label: "Transfer Aeropuerto", href: "/transfer-aeropuerto/", key: "transfer-aeropuerto" },
   { label: "Turismo", href: "/turismo/", key: "turismo" },
-  { label: "Trabaja con Nosotros", href: "/trabaja-con-nosotros/", key: "trabaja-con-nosotros" }
+  { label: "Contacto", href: "/contacto/", key: "contacto" }
 ];
 
 export const stats = [
@@ -29,6 +30,9 @@ export const imageMap = {
   aeropuerto: "aeropuerto1",
   celebraciones: "celebraciones",
   convenio: "convenio_emp",
+  empresaMision: "empresa-mision",
+  empresaValores: "empresa-valores",
+  empresaVision: "empresa-vision",
   graduaciones: "graduaciones",
   homeCostaMatrimonio: "home-costa-matrimonio",
   homeValparaisoIglesia: "home-valparaiso-iglesia",
@@ -95,19 +99,19 @@ export const companyCards: ServiceCard[] = [
     title: "Misión",
     description:
       "Brindar soluciones de transporte de pasajeros seguras, eficientes y personalizadas, ofreciendo experiencias de viaje de alta calidad mediante un servicio confiable, puntual y profesional, adaptado a las necesidades de cada cliente en sus traslados.",
-    image: "mision"
+    image: "empresaMision"
   },
   {
     title: "Visión",
     description:
       "Ser una empresa líder en servicios de transporte y turismo en Chile, reconocida por su excelencia operativa, compromiso con los clieentes, innovación en el servicio y capacidad de generar experiencias de viaje cómodas, seguras y memorables.",
-    image: "vision"
+    image: "empresaVision"
   },
   {
     title: "Valores",
     description:
       "Compromiso: Trabajamos con responsabilidad y dedicación para cumplir cada servicio con seguridad y excelencia. Seguridad: Priorizamos el bienestar de nuestros pasajeros mediante protocolos, conducción profesional y una flota en óptimas condiciones. Calidad de Servicio: Buscamos superar las expectativas de nuestros clientes entregando atención cercana, eficiente y personalizada. Confianza: Construimos relaciones duraderas basadas en la transparencia, el respeto y el cumplimiento de nuestros compromisos. Profesionalismo: Contamos con un equipo humano capacitado y orientado a entregar una experiencia de transporte de alto nivel.",
-    image: "valores"
+    image: "empresaValores"
   }
 ];
 

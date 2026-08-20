@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BriefcaseBusiness, Building2, Guitar, MountainSnow, Plane } from "lucide-react";
+import { Building2, Guitar, Mail, MountainSnow, Plane } from "lucide-react";
 import { Cta } from "@/components/Cta";
 import { Hero } from "@/components/Hero";
 import { ServiceGrid } from "@/components/ServiceGrid";
@@ -61,8 +61,8 @@ function QuickLinkIcon({ name }: { name: string }) {
       return <Plane className="quick-link-svg" aria-hidden="true" />;
     case "turismo":
       return <MountainSnow className="quick-link-svg" aria-hidden="true" />;
-    case "trabaja-con-nosotros":
-      return <BriefcaseBusiness className="quick-link-svg" aria-hidden="true" />;
+    case "contacto":
+      return <Mail className="quick-link-svg" aria-hidden="true" />;
     default:
       return <Building2 className="quick-link-svg" aria-hidden="true" />;
   }

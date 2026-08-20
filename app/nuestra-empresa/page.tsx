@@ -54,7 +54,7 @@ export default function NuestraEmpresaPage() {
               Transportes Lombardía es una empresa dedicada al transporte de pasajeros, ofreciendo servicios de calidad para las diferentes necesidades de nuestros clientes.
             </p>
           </div>
-          <ServiceGrid cards={companyCards} />
+          <ServiceGrid cards={companyCards} className="company-grid" />
         </div>
       </section>
       <Stats />

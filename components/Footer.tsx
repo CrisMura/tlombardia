@@ -7,7 +7,7 @@ const serviceLinks = navItems.filter((item) =>
 );
 
 const companyLinks = navItems.filter((item) =>
-  ["nuestra-empresa", "trabaja-con-nosotros"].includes(item.key)
+  ["nuestra-empresa", "contacto"].includes(item.key)
 );
 
 export function Footer() {

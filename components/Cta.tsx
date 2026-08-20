@@ -5,7 +5,7 @@ type CtaProps = {
   title: string;
   text: string;
   primaryLabel: string;
-  secondaryLabel: string;
+  secondaryLabel?: string;
   secondaryHref?: string;
   primaryHref?: string;
 };
@@ -16,7 +16,7 @@ export function Cta({
   primaryLabel,
   secondaryLabel,
   primaryHref = site.whatsapp,
-  secondaryHref = "/trabaja-con-nosotros/"
+  secondaryHref = "/contacto/"
 }: CtaProps) {
   const primaryExternal = primaryHref.startsWith("http") || primaryHref.startsWith("mailto:");
   const secondaryExternal = secondaryHref.startsWith("http") || secondaryHref.startsWith("mailto:");
@@ -37,15 +37,17 @@ export function Cta({
                 {primaryLabel}
               </Link>
             )}
-            {secondaryExternal ? (
-              <a href={secondaryHref} className="btn-cta-outline">
-                {secondaryLabel}
-              </a>
-            ) : (
-              <Link href={secondaryHref} className="btn-cta-outline">
-                {secondaryLabel}
-              </Link>
-            )}
+            {secondaryLabel ? (
+              secondaryExternal ? (
+                <a href={secondaryHref} className="btn-cta-outline">
+                  {secondaryLabel}
+                </a>
+              ) : (
+                <Link href={secondaryHref} className="btn-cta-outline">
+                  {secondaryLabel}
+                </Link>
+              )
+            ) : null}
           </div>
         </div>
       </div>
