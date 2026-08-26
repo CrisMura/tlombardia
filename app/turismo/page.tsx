@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     title: "Turismo en Chile | Transportes Lombardía",
     description: "Rutas turísticas, escapadas y circuitos por Chile para familias y grupos.",
     url: "/turismo/",
-    images: ["/img/index1-1200.jpg"]
+    images: ["/img/turismo-costa-valparaiso-1200.jpg"]
   },
   twitter: {
     title: "Turismo en Chile | Transportes Lombardía",
     description: "Rutas turísticas, escapadas y circuitos por Chile para familias y grupos.",
-    images: ["/img/index1-1200.jpg"]
+    images: ["/img/turismo-costa-valparaiso-1200.jpg"]
   }
 };
 
@@ -44,7 +44,7 @@ export default function TurismoPage() {
         badge="Turismo"
         title="Descubre Valparaíso con Nosotros"
         text="Rutas turísticas personalizadas, circuitos y escapadas. Vive experiencias únicas junto a tu familia o grupo de amigos."
-        image="home"
+        image="turismoCostaValparaiso"
         compact
       />
       <section className="section">

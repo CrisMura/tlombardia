@@ -33,22 +33,25 @@ export const imageMap = {
   empresaMision: "empresa-mision",
   empresaValores: "empresa-valores",
   empresaVision: "empresa-vision",
+  eventosDeportivos: "eventos-deportivos",
+  estadioNacional: "estadio-nacional1",
   graduaciones: "graduaciones",
   homeCostaMatrimonio: "home-costa-matrimonio",
   homeValparaisoIglesia: "home-valparaiso-iglesia",
   homeValparaisoMatrimonio: "home-valparaiso-matrimonio",
   homeVinaInvitados: "home-vina-invitados",
   homeVinaPlaya: "home-vina-playa",
+  homeViajesEspeciales: "home-viajes-especiales",
   home: "index1",
   matrimonios: "matri1",
   mision: "mision",
+  turismoCostaValparaiso: "turismo-costa-valparaiso",
   turismoRutaCosta: "turismo-ruta-costa",
   turismoRutaPatrimonial: "turismo-ruta-patrimonial",
   turismoRutaPoetas: "turismo-ruta-poetas",
   turismoRutaVino: "turismo-ruta-vino",
   valores: "valores",
-  vision: "vision",
-  viajes: "viajes_especiales5"
+  vision: "vision"
 } as const;
 
 export type ImageKey = keyof typeof imageMap;
@@ -84,7 +87,7 @@ export const homeServices: ServiceCard[] = [
     description:
       "Organización de traslado para eventos tales como matrimonios, novios o invitados, conciertos, teatros, convenios empresas y viajes corporativos.",
     href: "/viajes-especiales/",
-    image: "viajes"
+    image: "homeViajesEspeciales"
   },
   {
     title: "Turismo",
@@ -127,7 +130,7 @@ export const specialTripsCards: ServiceCard[] = [
     title: "Conciertos y Eventos",
     description:
       "Traslado de grupos para eventos musicales, festivales y conferencias. Coordinamos logística para grupos grandes.",
-    image: "viajes"
+    image: "homeViajesEspeciales"
   },
   {
     title: "Convenios Empresas",
@@ -144,8 +147,8 @@ export const specialTripsCards: ServiceCard[] = [
   {
     title: "Eventos Deportivos",
     description:
-      "Transporte para equipos deportivos, barras y aficionados que asisten a competencias o encuentros especiales.",
-    marker: "GO"
+      "Transporte para eventos deportivos y competencias, equipos y familiares.",
+    image: "eventosDeportivos"
   },
   {
     title: "Fiestas y Celebraciones",
@@ -212,7 +215,7 @@ export const tourismCards: ServiceCard[] = [
   {
     title: "Ruta de los Poetas, Litoral Central",
     description:
-      "Iniciamos nuestro recorrido por Casablanca, ciudad de los Valles, siguiendo por Algarrobo y su encanto. El Quisco e Isla Negra nuestra detención obligada para visitar una de las casas predilectas de nuestro poeta Pablo Neruda (ahora Casa-Museo), lugar donde junto al mar y la tranquilidad de la zona inspiro para escribir muchas de sus obras.\n**Itinerario**: Casablanca, Algarrobo, El Quisco, El Tabo, Isla Negra.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
+      "Iniciamos nuestro recorrido por Casablanca, ciudad de los Valles, siguiendo por Algarrobo y su encanto. El Quisco e Isla Negra nuestra detención obligada para visitar una de las casas predilectas de nuestro poeta Pablo Neruda (ahora Casa-Museo), lugar donde junto al mar y la tranquilidad de la zona inspiró para escribir muchas de sus obras.\n**Itinerario**: Casablanca, Algarrobo, El Quisco, El Tabo, Isla Negra.\n**Duración**: 6 horas aproximadamente.\n**Mínimo**: 3 personas.",
     image: "turismoRutaPoetas",
     marker: "VIN"
   },
@@ -224,7 +227,7 @@ export const tourismCards: ServiceCard[] = [
     marker: "ADV"
   },
   {
-    title: "Tours Culturales",
+    title: "Ruta Portillo - Los Ándes, Santuario Auco",
     description:
       "Rutas por ciudades patrimoniales, museos y lugares históricos de Chile.",
     marker: "CUL"
@@ -232,7 +235,7 @@ export const tourismCards: ServiceCard[] = [
   {
     title: "Viajes Familiares",
     description:
-      "Paquetes diseñados para familias. Seguridad, comodidad y entretenimiento para todos.",
+      "Personalizados a convenir con los clientes.",
     marker: "FAM"
   }
 ];

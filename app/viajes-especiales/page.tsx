@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     title: "Viajes Especiales y Eventos | Transportes Lombardía",
     description: "Transporte para matrimonios, conciertos, empresas y celebraciones en Chile.",
     url: "/viajes-especiales/",
-    images: ["/img/viajes_especiales5-1200.jpg"]
+    images: ["/img/estadio-nacional1-1200.jpg"]
   },
   twitter: {
     title: "Viajes Especiales y Eventos | Transportes Lombardía",
     description: "Transporte para matrimonios, conciertos, empresas y celebraciones en Chile.",
-    images: ["/img/viajes_especiales5-1200.jpg"]
+    images: ["/img/estadio-nacional1-1200.jpg"]
   }
 };
 
@@ -44,7 +44,7 @@ export default function ViajesEspecialesPage() {
         badge="Viajes Especiales"
         title="Eventos Inolvidables con el Mejor Servicio"
         text="Organizamos el transporte para tus eventos más importantes: matrimonios, conciertos, convenios empresariales y más."
-        image="viajes"
+        image="estadioNacional"
         compact
       />
       <section className="section">
