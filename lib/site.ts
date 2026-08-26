@@ -27,6 +27,7 @@ export const stats = [
 ];
 
 export const imageMap = {
+  atencion247: "atencion-24-7",
   aeropuerto: "aeropuerto1",
   celebraciones: "celebraciones",
   convenio: "convenio_emp",
@@ -36,6 +37,7 @@ export const imageMap = {
   eventosDeportivos: "eventos-deportivos",
   estadioNacional: "estadio-nacional1",
   graduaciones: "graduaciones",
+  gruposFamiliasAeropuerto: "grupos-familias-aeropuerto",
   homeCostaMatrimonio: "home-costa-matrimonio",
   homeValparaisoIglesia: "home-valparaiso-iglesia",
   homeValparaisoMatrimonio: "home-valparaiso-matrimonio",
@@ -45,11 +47,18 @@ export const imageMap = {
   home: "index1",
   matrimonios: "matri1",
   mision: "mision",
+  puntualidadAeropuerto: "puntualidad-aeropuerto",
+  recogidaAeropuerto: "recogida-aeropuerto",
+  seguimientoVuelos: "seguimiento-vuelos",
   turismoCostaValparaiso: "turismo-costa-valparaiso",
+  turismoValparaisoExperiencias: "turismo-valparaiso-experiencias",
   turismoRutaCosta: "turismo-ruta-costa",
   turismoRutaPatrimonial: "turismo-ruta-patrimonial",
+  turismoRutaPatrimonialV2: "turismo-ruta-patrimonial-v2",
+  turismoRutaPatrimonialV3: "turismo-ruta-patrimonial-v3",
   turismoRutaPoetas: "turismo-ruta-poetas",
   turismoRutaVino: "turismo-ruta-vino",
+  trasladoAeropuerto: "traslado-aeropuerto",
   valores: "valores",
   vision: "vision"
 } as const;
@@ -163,37 +172,37 @@ export const airportCards: ServiceCard[] = [
     title: "Traslado al Aeropuerto",
     description:
       "Te llevamos desde tu hotel, casa u oficina directamente al terminal nacional o internacional del Aeropuerto Arturo Merino Benítez de Santiago. Llega sin estrés.",
-    marker: "OUT"
+    image: "trasladoAeropuerto"
   },
   {
     title: "Recogida en Aeropuerto",
     description:
       "Te esperamos en los arrivals con un cartel personalizado con tu nombre. También podemos coordinar tu llegada via whatsapp de forma más privada. Traslado hacia tu destino.",
-    marker: "IN"
+    image: "recogidaAeropuerto"
   },
   {
     title: "Seguimiento de Vuelos",
     description:
       "Monitoreamos tu vuelo en tiempo real para ajustar la hora de recogida y evitar esperas innecesarias.",
-    marker: "ETA"
+    image: "seguimientoVuelos"
   },
   {
     title: "Puntualidad Garantizada",
     description:
       "Calculamos el tiempo necesario para que llegues con tranquilidad a tu vuelo. Tu tiempo es importante.",
-    marker: "24"
+    image: "puntualidadAeropuerto"
   },
   {
     title: "Grupos y Familias",
     description:
       "Flota de vans y buses para familias numerosas o grupos. Equipaje incluido en el servicio.",
-    marker: "VIP"
+    image: "gruposFamiliasAeropuerto"
   },
   {
     title: "Atención 24/7",
     description:
       "Servicio disponible todos los días del año, incluyendo festivos y horarios nocturnos (previa programación).",
-    marker: "365"
+    image: "atencion247"
   }
 ];
 
@@ -202,7 +211,7 @@ export const tourismCards: ServiceCard[] = [
     title: "Ruta Patrimonial",
     description:
       "La ciudad de Valparaíso, cuyos orígenes se remontan al siglo XVI, es nuestra ciudad puerto, Patrimonio de la Humanidad y sede del Poder Legislativo, acompañado por Viña del Mar, su Reloj de Flores y su anfiteatro, terminando por la Capital Gastronómica que es Con Con.\n**Itinerario**: Muelle Prat, Plaza Sotomayor, Iglesia La Matriz, Paseo 21 de Mayo, Las Torpederas, Playa Ancha, Laguna Verde, La Sebastiana, Camino Cintura, Cerro Bellavista, Centro Valparaiso, Cerro Baron, Caleta Portales.\n**Duración**: 4 horas (incluye 1 hora de colación).\n**Mínimo**: 3 pasajeros.",
-    image: "turismoRutaPatrimonial",
+    image: "turismoRutaPatrimonialV3",
     marker: "RUT"
   },
   {
