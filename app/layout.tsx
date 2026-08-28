@@ -3,6 +3,7 @@ import { Analytics } from "@/components/Analytics";
 import { ClickTracker } from "@/components/ClickTracker";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Footer />
         <Analytics />
         <ClickTracker />
+        <ScrollToTop />
       </body>
     </html>
   );

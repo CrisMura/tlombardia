@@ -334,6 +334,10 @@ textarea {
   padding: 76px 0;
 }
 
+#servicios {
+  scroll-margin-top: 45px;
+}
+
 .section-soft {
   background: var(--paper-soft);
 }
@@ -975,7 +979,46 @@ textarea {
     padding: 58px 0;
   }
 
+  #servicios {
+    scroll-margin-top: 155px;
+  }
+
+  .quick-links {
+    padding: 14px 0;
+  }
+
   .quick-links .container {
-    justify-content: flex-start;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .quick-link {
+    border-radius: 8px;
+    justify-content: center;
+    min-height: 52px;
+    padding: 5px;
+    width: 52px;
+  }
+
+  .quick-link-label {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .quick-link-icon {
+    height: 44px;
+    width: 44px;
+  }
+
+  .quick-link-svg {
+    height: 34px;
+    width: 34px;
   }
 }

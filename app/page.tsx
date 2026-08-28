@@ -85,20 +85,20 @@ export default function HomePage() {
           <a href={site.whatsapp} className="btn-hero btn-hero-primary" target="_blank" rel="noreferrer">
             Cotizar por WhatsApp
           </a>
-          <Link href="#servicios" className="btn-hero btn-hero-secondary">
+          <a href="#servicios" className="btn-hero btn-hero-secondary">
             Ver Servicios
-          </Link>
+          </a>
         </div>
       </Hero>
 
       <section className="quick-links" aria-label="Accesos rápidos">
         <div className="container">
           {quickLinks.map((item) => (
-            <Link href={item.href} className="quick-link" key={item.key}>
+            <Link href={item.href} className="quick-link" key={item.key} aria-label={item.label}>
               <span className="quick-link-icon" aria-hidden="true">
                 <QuickLinkIcon name={item.key} />
               </span>
-              {item.label}
+              <span className="quick-link-label">{item.label}</span>
             </Link>
           ))}
         </div>
