@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Transportes Lombardia</title>
+  <rect width="64" height="64" rx="10" fill="#ffffff" />
+  <path d="M6 57V17C6 9.8 11.8 4 19 4h9v8h-8.2C16.6 12 14 14.6 14 17.8V57z" fill="#050505" />
+  <path d="M47 8h10v39.5C57 54.4 51.4 60 44.5 60H36v-8h8.6c1.3 0 2.4-1.1 2.4-2.4z" fill="#ff7a18" />
+  <circle cx="32" cy="29" r="21" fill="#ffffff" stroke="#ff7a18" stroke-width="4" />
+  <circle cx="32" cy="29" r="16.5" fill="#ffffff" stroke="#050505" stroke-width="2" />
+  <path d="M18 33.5h28l-2.2-9.1c-.6-2.5-2.6-4.4-5.2-4.8-4.4-.7-8.8-.7-13.2 0-2.6.4-4.6 2.3-5.2 4.8z" fill="#050505" />
+  <path d="M23 24.3c6-1 12-1 18 0l1.1 4.2H21.9z" fill="#ffffff" />
+  <path d="M20.1 34.8h5.8c-.5 1.8-1.8 2.8-3.6 2.8-1.7 0-2.5-.8-2.2-2.8z" fill="#ffffff" />
+  <path d="M38.1 34.8h5.8c.3 2-.5 2.8-2.2 2.8-1.8 0-3.1-1-3.6-2.8z" fill="#ffffff" />
+  <path d="M25 32.7h14" stroke="#ffffff" stroke-linecap="round" stroke-width="1.8" />
+  <path d="M20 40h24" stroke="#e33b4f" stroke-linecap="round" stroke-width="2.5" />
+</svg>
