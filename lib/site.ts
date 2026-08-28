@@ -51,6 +51,8 @@ export const imageMap = {
   recogidaAeropuerto: "recogida-aeropuerto",
   seguimientoVuelos: "seguimiento-vuelos",
   turismoCostaValparaiso: "turismo-costa-valparaiso",
+  turismoPersonalizado: "turismo-personalizado",
+  turismoPortilloAuco: "turismo-portillo-auco",
   turismoValparaisoExperiencias: "turismo-valparaiso-experiencias",
   turismoRutaCosta: "turismo-ruta-costa",
   turismoRutaPatrimonial: "turismo-ruta-patrimonial",
@@ -60,6 +62,7 @@ export const imageMap = {
   turismoRutaVino: "turismo-ruta-vino",
   trasladoAeropuerto: "traslado-aeropuerto",
   valores: "valores",
+  viajesFamiliaresGrupales: "viajes-familiares-grupales",
   vision: "vision"
 } as const;
 
@@ -103,7 +106,7 @@ export const homeServices: ServiceCard[] = [
     description:
       "Rutas turísticas personalizadas, circuitos por la V Región, escapadas de fin de semana, viajes grupales, parejas o familias.",
     href: "/turismo/",
-    marker: "CL"
+    image: "turismoPersonalizado"
   }
 ];
 
@@ -236,15 +239,16 @@ export const tourismCards: ServiceCard[] = [
     marker: "ADV"
   },
   {
-    title: "Ruta Portillo - Los Ándes, Santuario Auco",
+    title: "Ruta Portillo - Los Ándes - Auco",
     description:
-      "Rutas por ciudades patrimoniales, museos y lugares históricos de Chile.",
-    marker: "CUL"
+      "Partimos desde Valparaíso o Viña del Mar a descubrir la magia de nuestra Cordillera de Los Andes, ideal para paseoso excursiones familiares, una travesía full day, con el opcional de en el retorno visitar el Tempo de Auco de Sor Teresa de Los Andes.\n**Intinerario:** Valparaiso, Viña del Mar, Los Andes, retorno.\n**Duracion total:** 10 horas app.\n**Minimo:** 5 personas.",
+    image: "turismoPortilloAuco"
   },
   {
-    title: "Viajes Familiares",
+    title: "Viajes Familiares o Grupales",
     description:
-      "Personalizados a convenir con los clientes.",
+      "Ideales para grupos familiares grandes, amigos, colaboradores que buscan un dia de relajo en alguna atracción de la V Región o alrededores. Viajes personalizados a diverso lugares tales como Buin Zoo, Templo Bahai, Fantasilandia, entre otros.\n**Minimo:** 5 personas",
+    image: "viajesFamiliaresGrupales",
     marker: "FAM"
   }
 ];
